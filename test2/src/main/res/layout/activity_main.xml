@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/traceroute_rootview"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+
+    >
+
+    <EditText
+        android:id="@+id/wbs_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/WBS"
+        android:singleLine="true"
+        android:layout_marginBottom="5dp"
+        android:textSize="25dp"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/good_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/good"
+        android:singleLine="true"
+        android:layout_marginBottom="5dp"
+        android:textSize="25dp"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/supply_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:hint="@string/supply"
+        android:singleLine="true"
+        android:textSize="25dp"></EditText>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="打印次数:"
+            android:textSize="25dp"></TextView>
+
+        <EditText
+            android:id="@+id/printTime"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="120dp"
+            android:singleLine="true"
+            android:text="1"
+            android:textSize="25dp"
+            android:inputType="number"></EditText>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonScan"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="扫描" />
+
+        <Button
+            android:id="@+id/buttonGenerate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:text="生成" />
+
+        <Button
+            android:id="@+id/buttonPrintQRcode"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+            android:text="打印" />
+    </FrameLayout>>
+
+    <ImageView
+        android:id="@+id/img123"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+
+
+
+</LinearLayout>
